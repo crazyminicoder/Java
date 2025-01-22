@@ -39,15 +39,35 @@ public class linkedList {
 
     }
 
+    public void merge(linkedList l1, linkedList l2) {
+        linkedList l3 = new linkedList();
+        Node l1c = l1.head;
+        Node l2c = l2.head;
+        while (l1c != null || l2c != null) {
+            l3.add(l1c.data);
+            l3.add(l2c.data);
+            l1c = l1c.next;
+            l2c = l2c.next;
+        }
+
+        l3.printll();
+    }
+
     public static void main(String args[]) {
         linkedList ll = new linkedList();
-        ll.add(10);
-        ll.add(20);
-        ll.add(30);
-        ll.add(5);
-        ll.add(15);
-        ll.add(25);
+        linkedList ll2 = new linkedList();
+        ll.add(1);
+        ll.add(2);
+        ll.add(4);
+        ll2.add(1);
+        ll2.add(3);
+        ll2.add(4);
 
         ll.printll();
+        ll2.printll();
+
+        linkedList l3 = new linkedList();
+        l3.merge(ll, ll2);
+
     }
 }
