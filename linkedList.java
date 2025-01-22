@@ -39,7 +39,7 @@ public class linkedList {
 
     }
 
-    public void merge(linkedList l1, linkedList l2) {
+    public Node merge(linkedList l1, linkedList l2) {
         linkedList l3 = new linkedList();
         Node l1c = l1.head;
         Node l2c = l2.head;
@@ -50,7 +50,9 @@ public class linkedList {
             l2c = l2c.next;
         }
 
-        l3.printll();
+        // l3.printll();
+
+        return l3.head;
     }
 
     public static void main(String args[]) {
@@ -67,7 +69,12 @@ public class linkedList {
         ll2.printll();
 
         linkedList l3 = new linkedList();
-        l3.merge(ll, ll2);
+        Node mergedList = l3.merge(ll, ll2);
+
+        linkedList newMergedList = new linkedList();
+        newMergedList.head = mergedList;
+
+        newMergedList.printll();
 
     }
 }
