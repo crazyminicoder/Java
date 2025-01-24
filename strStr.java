@@ -26,7 +26,9 @@ public class strStr {
 
     public static void main(String args[]) {
         strStr s = new strStr();
+
         String s1 = "sadbutsad";
+
         String s2 = "sad";
 
         int res = s.str(s1, s2);
