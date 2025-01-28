@@ -8,7 +8,9 @@ public class validParentheses {
         for (int i = 1; i < s.length(); i++) {
             // System.out.println("Char = " + s.charAt(i));
             if (s.charAt(i) == ')') {
+
                 if (stack.isEmpty()) {
+
                     return false;
                 } else if (stack.peek() == '(') {
                     stack.pop();
