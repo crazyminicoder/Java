@@ -19,6 +19,7 @@ public class validParentheses {
                 }
             } else if (s.charAt(i) == '}') {
                 if (stack.isEmpty()) {
+
                     return false;
                 } else if (stack.peek() == '{') {
                     stack.pop();
