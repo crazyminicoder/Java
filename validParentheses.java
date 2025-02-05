@@ -29,8 +29,11 @@ public class validParentheses {
                     stack.push(s.charAt(i));
                 }
             } else if (s.charAt(i) == ']') {
+
                 if (stack.isEmpty()) {
+
                     return false;
+
                 } else if (stack.peek() == '[') {
                     stack.pop();
                 } else {
