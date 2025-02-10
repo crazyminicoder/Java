@@ -35,20 +35,28 @@ public class validParentheses {
                     return false;
 
                 } else if (stack.peek() == '[') {
+
                     stack.pop();
                 } else {
                     stack.push(s.charAt(i));
                 }
             } else if (s.charAt(i) == '>') {
+
                 if (stack.isEmpty()) {
+
                     return false;
+
                 } else if (stack.peek() == '<') {
+
                     // System.out.println("in <" + stack.peek());
                     stack.pop();
+
                 } else {
                     stack.push(s.charAt(i));
+
                 }
             } else {
+
                 stack.push(s.charAt(i));
             }
         }
