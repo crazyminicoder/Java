@@ -2,11 +2,14 @@ import java.util.Stack;
 
 public class validParentheses {
     public boolean vp(String s) {
+
         Stack<Character> stack = new Stack<>();
 
         stack.push(s.charAt(0));
+
         // System.out.println(stack.peek());
         for (int i = 1; i < s.length(); i++) {
+
             // System.out.println("Char = " + s.charAt(i));
             if (s.charAt(i) == ')') {
 
