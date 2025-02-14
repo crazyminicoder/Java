@@ -18,10 +18,13 @@ public class longestCommonPrefix {
     }
 
     public static void main(String args[]) {
+
         String[] str = { "flower", "flow", "flight" };
 
         longestCommonPrefix l = new longestCommonPrefix();
+
         String res = l.lcp(str);
+
         System.out.println(res);
     }
 }
