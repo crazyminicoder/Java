@@ -1,7 +1,9 @@
 public class longestCommonPrefix {
     public String lcp(String[] s) {
         String res = "";
+
         String word = s[0];
+
         char ch;
         for (int i = 0; i < word.length(); i++) {
             ch = word.charAt(i);

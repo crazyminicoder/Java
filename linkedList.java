@@ -41,11 +41,14 @@ public class linkedList {
 
     public Node merge(linkedList l1, linkedList l2) {
         linkedList l3 = new linkedList();
+
         Node l1c = l1.head;
+
         Node l2c = l2.head;
         while (l1c != null || l2c != null) {
             l3.add(l1c.data);
             l3.add(l2c.data);
+
             l1c = l1c.next;
             l2c = l2c.next;
         }
