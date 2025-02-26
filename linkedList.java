@@ -59,7 +59,9 @@ public class linkedList {
     }
 
     public static void main(String args[]) {
+
         linkedList ll = new linkedList();
+        
         linkedList ll2 = new linkedList();
         ll.add(1);
         ll.add(2);
